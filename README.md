@@ -25,20 +25,20 @@ I'm currently building toward **graduate and junior opportunities in AI, machine
 
 ## 🚀 Featured Projects
 
-### [Machine Learning Model Comparison](projects/machine-learning-model-comparison.md)
-Compared Logistic Regression and Decision Tree classifiers for heat-safety alerts using accuracy, precision, recall, F1, confusion matrices and model tuning.
+### [Machine Learning Model Comparison](https://github.com/Billalhossainshishir/machine-learning-model-comparison)
+Python/scikit-learn classification project comparing Logistic Regression and a tuned Decision Tree for fictional heat-safety alerts. Includes reproducible model-training and evaluation code.
 
-### [Cloud Data Processing & Machine Learning](projects/cloud-data-processing.md)
-Worked on a distributed Nectar Cloud workflow using Python, pandas and scikit-learn, including feature transformation and model evaluation.
+### [Cloud Data Processing](https://github.com/Billalhossainshishir/cloud-data-processing)
+Portfolio-safe version of my Worker 3 contribution to a distributed Nectar Cloud workflow. Includes a Flask transformation service using pandas and scikit-learn.
 
-### [Emergency Route Planning](projects/emergency-route-planning.md)
-Implemented weighted graphs, Dijkstra's shortest-path algorithm and a binary-heap priority queue in C, with **24 passing unit tests**.
+### [Emergency Route Planning](https://github.com/Billalhossainshishir/emergency-route-planning)
+C implementation of weighted graphs, Dijkstra's shortest-path algorithm, route reconstruction and a binary-heap priority queue, with a 24-test suite.
 
-### [Data Structures Performance Benchmarking](projects/data-structures-performance.md)
-Compared arrays, linked lists, AVL trees and hash tables in a database-style C project and benchmarked search performance.
+### [Data Structures Performance](https://github.com/Billalhossainshishir/data-structures-performance)
+C implementations covering arrays, ordered linked lists, AVL trees and hash tables for a many-to-many database-style problem.
 
 ### [RAMIFY OS — University Industry Project](projects/ramify-os.md)
-Project Manager for a browser-based AI product-trust demonstration, coordinating requirements, testing, documentation, team responsibilities and client feedback.
+Project Manager for a browser-based AI product-trust demonstration, coordinating requirements, testing, documentation, team responsibilities and client feedback. A case study is published instead of confidential/team source code.
 
 ➡️ [View all project case studies](projects/README.md)
 
