@@ -25,6 +25,9 @@ I'm currently building toward **graduate and junior opportunities in AI, machine
 
 ## 🚀 Featured Projects
 
+### [Star Type Classification with Machine Learning](https://github.com/Billalhossainshishir/star-classification-machine-learning)
+Multiclass classification project comparing Decision Tree, Random Forest and SVC on stellar data. Includes stratified 5-fold cross-validation, leakage prevention, Random Forest tuning with GridSearchCV, and final hold-out evaluation.
+
 ### [Machine Learning Model Comparison](https://github.com/Billalhossainshishir/machine-learning-model-comparison)
 Python/scikit-learn classification project comparing Logistic Regression and a tuned Decision Tree for fictional heat-safety alerts. Includes reproducible model-training and evaluation code.
 
