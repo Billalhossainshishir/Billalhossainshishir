@@ -40,6 +40,9 @@ C implementation of weighted graphs, Dijkstra's shortest-path algorithm, route r
 ### [Data Structures Performance](https://github.com/Billalhossainshishir/data-structures-performance)
 C implementations covering arrays, ordered linked lists, AVL trees and hash tables for a many-to-many database-style problem.
 
+### [UNIX Shell Scripting Utilities](https://github.com/Billalhossainshishir/unix-shell-scripting)
+Portfolio-safe shell scripting utilities covering compression benchmarking, UNIX session monitoring and a command-line contact directory.
+
 ### [RAMIFY OS — University Industry Project](projects/ramify-os.md)
 Project Manager for a browser-based AI product-trust demonstration, coordinating requirements, testing, documentation, team responsibilities and client feedback. A case study is published instead of confidential/team source code.
 
