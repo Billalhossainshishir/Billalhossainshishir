@@ -4,6 +4,9 @@ This section contains concise public case studies of my strongest technical work
 
 ## Projects
 
+### [Star Type Classification with Machine Learning](https://github.com/Billalhossainshishir/star-classification-machine-learning)
+Multiclass star-type prediction using Decision Tree, Random Forest and SVC, with stratified 5-fold cross-validation, target-leakage prevention, GridSearchCV tuning and final hold-out evaluation.
+
 ### [Machine Learning Model Comparison](machine-learning-model-comparison.md)
 Python / scikit-learn classification project comparing Logistic Regression and Decision Tree models for heat-safety alerts, with model tuning and metric-based recommendation.
 
