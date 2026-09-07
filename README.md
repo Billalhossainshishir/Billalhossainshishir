@@ -1,6 +1,6 @@
 # Hi, I'm Billal Hossain Shishir 👋
 
-**Final-year Information Technology student | Artificial Intelligence major | University of Tasmania**
+**Information Technology | Artificial Intelligence major | University of Tasmania**
 
 I'm building practical experience across **machine learning, data and cloud systems, algorithms, software development, testing, and technical project delivery**. My goal is to move into a graduate or junior role where I can keep developing toward AI/ML, data, software, or cloud engineering work.
 
