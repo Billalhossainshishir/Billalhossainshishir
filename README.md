@@ -1,57 +1,85 @@
-# Hi, I'm Billal Hossain Shishir 👋
+# Billal Hossain Shishir
 
-**Information Technology | Artificial Intelligence major | University of Tasmania**
+**Information Technology · Artificial Intelligence · Data · Software**
 
-I'm building practical experience across **machine learning, data and cloud systems, algorithms, software development, testing, and technical project delivery**. My goal is to move into a graduate or junior role where I can keep developing toward AI/ML, data, software, or cloud engineering work.
+I build practical machine-learning, data, cloud and software projects using **Python, C and modern development tools**. My work includes supervised learning, model evaluation, cloud data transformation, algorithms, UNIX systems and industry-facing software delivery.
 
-## Technical focus
+[Projects](#selected-projects) · [Technical Stack](#technical-stack) · [Experience](#industry--project-experience) · [LinkedIn](https://www.linkedin.com/in/billal-hossain-shishir-046a02358) · [Email](mailto:Billals@utas.edu.au)
 
-- **Programming:** Python, C, JavaScript, SQL, HTML/CSS
-- **AI & data:** pandas, NumPy, scikit-learn, classification, model evaluation, cross-validation, GridSearchCV, Jupyter
-- **Algorithms & systems:** data structures, weighted graphs, Dijkstra, binary heaps, UNIX/Linux shell scripting
-- **Cloud & delivery:** Nectar Cloud, Flask/REST workflows, Git/GitHub, unit testing, documentation, requirements and client feedback
+---
 
-## Featured projects
+## Selected Projects
 
-| Project | What it demonstrates |
+### ⭐ [Star Type Classification with Machine Learning](https://github.com/Billalhossainshishir/star-classification-machine-learning)
+**Python · scikit-learn · Random Forest · SVC · GridSearchCV**
+
+Multiclass ML pipeline for predicting six star types from stellar features. Compared Decision Tree, Random Forest and SVC using stratified 5-fold cross-validation, prevented target leakage, tuned Random Forest with GridSearchCV and evaluated once on a held-out test set.
+
+**Result:** tuned Random Forest reached **0.9947 mean CV accuracy** and correctly classified all **48 held-out samples** in the completed run.
+
+### ☁️ [Cloud Data Processing & Feature Transformation](https://github.com/Billalhossainshishir/cloud-data-processing)
+**Python · Flask · pandas · scikit-learn · Nectar Cloud · REST**
+
+Portfolio-safe version of my transformation-worker contribution to a distributed cloud data pipeline. The service accepts cleaned CSV data, encodes categorical features, scales numerical features and outputs a machine-learning-ready dataset.
+
+### 🗺️ [Emergency Route Planning](https://github.com/Billalhossainshishir/emergency-route-planning)
+**C · Graphs · Dijkstra · Binary Heap · Unit Testing**
+
+Weighted-graph route planner using Dijkstra's shortest-path algorithm, a binary min-heap priority queue and predecessor-based route reconstruction.
+
+**Testing:** **24 unit tests** covering graph operations, priority queues, shortest paths, route reconstruction and edge cases.
+
+---
+
+## More Engineering Work
+
+| Project | Focus |
 |---|---|
-| [⭐ Star Type Classification](https://github.com/Billalhossainshishir/star-classification-machine-learning) | Multiclass ML with Decision Tree, Random Forest and SVC; stratified 5-fold CV, leakage prevention, GridSearchCV and hold-out evaluation |
-| [☁️ Cloud Data Processing](https://github.com/Billalhossainshishir/cloud-data-processing) | Flask-based transformation worker for a distributed Nectar Cloud data workflow using pandas and scikit-learn |
-| [🗺️ Emergency Route Planning](https://github.com/Billalhossainshishir/emergency-route-planning) | Weighted graphs, Dijkstra shortest path, binary-heap priority queue, route reconstruction and 24 unit tests in C |
-| [🌳 Data Structures Performance](https://github.com/Billalhossainshishir/data-structures-performance) | Arrays, ordered linked lists, AVL trees and hash tables for a many-to-many database-style problem in C |
-| [🤖 ML Model Comparison](https://github.com/Billalhossainshishir/machine-learning-model-comparison) | Logistic Regression vs Decision Tree for a fictional heat-safety classification problem using accuracy, recall and F1 |
-| [🐚 UNIX Shell Scripting](https://github.com/Billalhossainshishir/unix-shell-scripting) | POSIX shell utilities covering validation, compression, session monitoring, text processing and command-line interfaces |
-| [🏭 RAMIFY OS — Industry Project](projects/ramify-os.md) | Project management, requirements, testing, documentation and client-feedback delivery for a university industry project |
+| [Data Structures Performance](https://github.com/Billalhossainshishir/data-structures-performance) | Arrays, ordered linked lists, AVL trees, hash tables, many-to-many data modelling and performance comparison in C |
+| [Machine Learning Model Comparison](https://github.com/Billalhossainshishir/machine-learning-model-comparison) | Logistic Regression vs Decision Tree with accuracy, precision, recall, F1 and feature preprocessing |
+| [UNIX Shell Scripting](https://github.com/Billalhossainshishir/unix-shell-scripting) | POSIX shell scripting, compression benchmarking, user-session monitoring, text processing and CLI validation |
+| [RAMIFY OS — Industry Project](projects/ramify-os.md) | Project management, requirements, testing, documentation, client feedback and AI product-trust workflows |
 
-➡️ [View the full project index](projects/README.md)
+[View the complete project index →](projects/README.md)
 
-## Industry and project experience
+---
 
-### RAMIFY OS — University Industry Project
-Project Manager for a browser-based AI product-trust demonstration. I coordinate scope, requirements, team responsibilities, testing, documentation, client feedback and delivery preparation.
+## Technical Stack
 
-### TasNetworks × University of Tasmania × AWS Open Innovation Hackathon
-Worked in a team to develop and present a prototype addressing a real Tasmanian energy-sector challenge.
+**Programming**  
+`Python` `C` `JavaScript` `SQL` `HTML` `CSS`
 
-### DataEngBytes Melbourne 2026
+**Machine Learning & Data**  
+`pandas` `NumPy` `scikit-learn` `Classification` `Cross-Validation` `GridSearchCV` `Jupyter`
+
+**Algorithms & Systems**  
+`Data Structures` `Weighted Graphs` `Dijkstra` `Binary Heaps` `UNIX/Linux` `Shell Scripting`
+
+**Cloud & Development**  
+`Nectar Cloud` `Flask` `REST` `Git` `GitHub` `Unit Testing` `Requirements` `Documentation`
+
+---
+
+## Industry & Project Experience
+
+**RAMIFY OS — University Industry Project**  
+Project Manager for a browser-based AI product-trust demonstration, coordinating scope, requirements, testing, documentation, team responsibilities and client feedback.
+
+**TasNetworks × University of Tasmania × AWS Open Innovation Hackathon**  
+Worked in a team to develop and present a prototype for a real Tasmanian energy-sector challenge.
+
+**DataEngBytes Melbourne 2026**  
 Attended industry sessions covering AI engineering, GraphRAG, Snowflake, synthetic data, observability, data architecture and agent workflows.
+
+---
 
 ## Education
 
 **Bachelor of Information Technology — Major in Artificial Intelligence**  
-University of Tasmania, Hobart  
-**GPA: 6.11**
+University of Tasmania · **GPA 6.11**
 
-## Current direction
+---
 
-I'm currently strengthening my portfolio around:
+### What I'm building toward
 
-- machine learning and model evaluation
-- data engineering and cloud workflows
-- algorithms and software engineering fundamentals
-- reliable testing and documentation
-- practical industry-facing project delivery
-
-## Connect
-
-[LinkedIn](https://www.linkedin.com/in/billal-hossain-shishir-046a02358) · [Email](mailto:Billals@utas.edu.au) · [GitHub](https://github.com/Billalhossainshishir)
+Graduate and junior opportunities across **machine learning, data, software and cloud**, with a focus on building reliable systems, measuring results and continuing to strengthen my engineering fundamentals.
