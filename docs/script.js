@@ -36,3 +36,15 @@ sections.forEach(section=>sectionObserver.observe(section));
 
 const year=document.getElementById('year');
 if(year) year.textContent=new Date().getFullYear();
+
+// Load the transparent, web-optimised portrait and its precise hero alignment styles.
+const heroStyle=document.createElement('link');
+heroStyle.rel='stylesheet';
+heroStyle.href='./hero-v3.css?v=20260909-0113';
+document.head.appendChild(heroStyle);
+
+const portrait=document.querySelector('.portrait-shell img');
+if(portrait){
+  portrait.src='./assets/portrait-web.webp?v=20260909-0113';
+  portrait.alt='Billal Hossain Shishir';
+}
