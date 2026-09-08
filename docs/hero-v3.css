@@ -1,0 +1,52 @@
+/* Portrait integration overrides — transparent subject aligned inside the neon orbit */
+.showcase-visual{overflow:visible}
+.portrait-shell{
+  left:10%;
+  top:5%;
+  width:430px;
+  height:690px;
+  overflow:visible;
+  background:transparent;
+  border-radius:0;
+  filter:none;
+  animation:portraitFloat 5.5s ease-in-out infinite;
+  transform-origin:50% 80%;
+}
+.portrait-shell:after{display:none}
+.portrait-shell img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center bottom;
+  transform:none;
+  filter:drop-shadow(0 30px 22px rgba(0,0,0,.48)) drop-shadow(0 0 22px rgba(140,72,255,.22));
+  -webkit-user-drag:none;
+  user-select:none;
+}
+.visual-glow{left:1%;top:10%;width:600px;height:600px}
+.visual-ring{left:2%;top:10%;width:590px;height:590px}
+.ring-two{left:7%;top:15%;width:510px;height:510px}
+@keyframes portraitFloat{
+  0%,100%{transform:translate3d(0,0,0)}
+  50%{transform:translate3d(0,-10px,0)}
+}
+@media (prefers-reduced-motion:reduce){.portrait-shell{animation:none}}
+@media (max-width:1180px){
+  .portrait-shell{left:7%;width:390px;height:625px}
+  .visual-ring{width:520px;height:520px}
+  .ring-two{width:445px;height:445px}
+  .visual-glow{width:530px;height:530px}
+}
+@media (max-width:900px){
+  .showcase-visual{min-height:690px;margin:0 10px 15px}
+  .portrait-shell{left:50%;top:2%;width:min(430px,72vw);height:620px;transform:translateX(-50%);animation:none}
+  .visual-glow{left:50%;top:6%;width:min(570px,88vw);height:min(570px,88vw);transform:translateX(-50%)}
+  .visual-ring{left:50%;top:6%;width:min(560px,86vw);height:min(560px,86vw);transform:translateX(-50%)}
+  .ring-two{left:50%;top:11%;width:min(475px,72vw);height:min(475px,72vw);transform:translateX(-50%)}
+}
+@media (max-width:560px){
+  .showcase-visual{min-height:570px}
+  .portrait-shell{width:82vw;height:535px;top:3%}
+  .showcase-slogan,.future-note{display:none}
+  .impact-stack{right:2%;bottom:5%;transform:scale(.88);transform-origin:right bottom}
+}
