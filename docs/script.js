@@ -16,22 +16,13 @@ sections.forEach(section=>sectionObserver.observe(section));
 const year=document.getElementById('year');
 if(year) year.textContent=new Date().getFullYear();
 
-// Restore Billal's portfolio portrait from the repository blob.
-(async()=>{
-  const portrait=document.querySelector('.showcase-portrait img');
-  if(!portrait) return;
-  try{
-    const response=await fetch('https://api.github.com/repos/Billalhossainshishir/Billalhossainshishir/git/blobs/4222c328d79005c8546f8fb25926e77c5d46e428');
-    if(!response.ok) throw new Error('Portrait request failed');
-    const blob=await response.json();
-    const base64=(blob.content||'').replace(/\s/g,'');
-    if(!base64) throw new Error('Portrait data missing');
-    portrait.src='data:image/webp;base64,'+base64;
-    portrait.alt='Billal Hossain Shishir';
-  }catch(error){
-    console.error('Could not load portfolio portrait:',error);
-  }
-})();
+// Use the portrait stored directly in the GitHub Pages assets folder.
+const portrait=document.querySelector('.showcase-portrait img');
+if(portrait){
+  portrait.src='./assets/billal-hero.jpg?v=20260908-2245';
+  portrait.alt='Portrait of Billal Hossain Shishir';
+  portrait.onerror=()=>console.error('Portfolio portrait could not be loaded from assets/billal-hero.jpg');
+}
 
 // Replace resume-style numbers with information that is useful to recruiters.
 const stats=document.querySelector('.stats');
