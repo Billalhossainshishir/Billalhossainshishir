@@ -37,16 +37,17 @@ sections.forEach(section=>sectionObserver.observe(section));
 const year=document.getElementById('year');
 if(year) year.textContent=new Date().getFullYear();
 
-// Use Billal's original supplied DataEng photo. No generated image and no replacement asset.
+// Professional portrait styling and the approved background-removed portrait.
+const portraitStyle=document.createElement('link');
+portraitStyle.rel='stylesheet';
+portraitStyle.href='./hero-professional-fix.css?v=20260909-1345';
+document.head.appendChild(portraitStyle);
+
 const portrait=document.querySelector('.portrait-shell img');
 if(portrait){
-  portrait.src='./assets/billal-hero.jpg?v=20260909-1328';
-  portrait.alt='Billal Hossain Shishir at DataEng Australia';
-  portrait.style.display='block';
-  portrait.style.width='100%';
-  portrait.style.height='100%';
-  portrait.style.objectFit='cover';
-  portrait.style.objectPosition='18% 42%';
-  portrait.style.transform='scale(1.02)';
-  portrait.style.opacity='1';
+  portrait.src='./assets/billal-cutout-professional.webp?v=20260909-1345';
+  portrait.alt='Billal Hossain Shishir';
+  portrait.loading='eager';
+  portrait.decoding='async';
+  portrait.removeAttribute('style');
 }
