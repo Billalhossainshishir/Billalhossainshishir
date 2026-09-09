@@ -37,15 +37,15 @@ sections.forEach(section=>sectionObserver.observe(section));
 const year=document.getElementById('year');
 if(year) year.textContent=new Date().getFullYear();
 
-// Professional portrait styling and the approved background-removed portrait.
+// Load the approved transparent portrait and its final hero placement styles.
 const portraitStyle=document.createElement('link');
 portraitStyle.rel='stylesheet';
-portraitStyle.href='./hero-professional-fix.css?v=20260909-1345';
+portraitStyle.href='./hero-professional-fix.css?v=20260909-1415';
 document.head.appendChild(portraitStyle);
 
 const portrait=document.querySelector('.portrait-shell img');
 if(portrait){
-  portrait.src='./assets/billal-cutout-professional.webp?v=20260909-1345';
+  portrait.src='./assets/billal-cutout-professional.webp?v=20260909-1415';
   portrait.alt='Billal Hossain Shishir';
   portrait.loading='eager';
   portrait.decoding='async';

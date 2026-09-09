@@ -1,11 +1,11 @@
-/* Professional hero portrait fix - 2026-09-09 */
+/* Professional hero portrait placement - 2026-09-09 */
 .portrait-shell{
   position:absolute !important;
   z-index:4 !important;
-  left:12% !important;
-  top:3% !important;
-  width:480px !important;
-  height:710px !important;
+  left:15% !important;
+  top:7% !important;
+  width:390px !important;
+  height:610px !important;
   display:flex !important;
   align-items:flex-end !important;
   justify-content:center !important;
@@ -26,40 +26,33 @@
   transform:none !important;
   border-radius:0 !important;
   opacity:1 !important;
-  filter:drop-shadow(0 26px 30px rgba(0,0,0,.45)) drop-shadow(0 0 18px rgba(145,76,255,.22));
+  filter:drop-shadow(0 24px 28px rgba(0,0,0,.42)) drop-shadow(0 0 16px rgba(145,76,255,.2));
   animation:billalPortraitFloat 7s ease-in-out infinite;
 }
-.visual-glow{
-  background:radial-gradient(circle,#7a32ff 0%,#5421ce 20%,rgba(76,25,190,.4) 37%,rgba(42,17,119,.14) 58%,transparent 72%) !important;
-}
+.visual-glow{background:radial-gradient(circle,#7a32ff 0%,#5421ce 20%,rgba(76,25,190,.4) 37%,rgba(42,17,119,.14) 58%,transparent 72%) !important;}
 .visual-ring{box-shadow:0 0 46px rgba(112,46,255,.22),inset 0 0 44px rgba(112,46,255,.08) !important;}
 .showcase-slogan{right:1.5% !important;top:17% !important;}
 .impact-stack{right:0 !important;bottom:17% !important;}
-@keyframes billalPortraitFloat{
-  0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-7px)}
-}
+@keyframes billalPortraitFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 @media (max-width:1200px){
-  .portrait-shell{left:10% !important;width:440px !important;height:665px !important;top:5% !important;}
+  .portrait-shell{left:13% !important;width:360px !important;height:565px !important;top:8% !important;}
 }
 @media (max-width:900px){
   .showcase-visual{min-height:650px !important;margin:20px 0 0 !important;}
   .visual-ring{left:50% !important;transform:translateX(-50%) !important;width:min(82vw,520px) !important;height:min(82vw,520px) !important;top:10% !important;}
   .ring-two{left:50% !important;transform:translateX(-50%) !important;width:min(70vw,445px) !important;height:min(70vw,445px) !important;top:15% !important;}
   .visual-glow{left:50% !important;transform:translateX(-50%) !important;width:min(82vw,520px) !important;height:min(82vw,520px) !important;top:10% !important;}
-  .portrait-shell{left:50% !important;transform:translateX(-50%) !important;top:2% !important;width:min(68vw,390px) !important;height:min(94vw,560px) !important;}
+  .portrait-shell{left:50% !important;transform:translateX(-50%) !important;top:5% !important;width:min(62vw,340px) !important;height:min(88vw,500px) !important;}
   .showcase-slogan{right:3% !important;top:16% !important;font-size:1.1rem !important;}
   .impact-stack{right:3% !important;bottom:4% !important;transform:scale(.86);transform-origin:bottom right;}
 }
 @media (max-width:600px){
   .showcase-visual{min-height:560px !important;}
-  .portrait-shell{width:min(72vw,330px) !important;height:min(102vw,490px) !important;top:2% !important;}
+  .portrait-shell{width:min(68vw,310px) !important;height:min(96vw,455px) !important;top:5% !important;}
   .visual-ring{width:min(88vw,430px) !important;height:min(88vw,430px) !important;top:8% !important;}
   .ring-two{width:min(74vw,360px) !important;height:min(74vw,360px) !important;top:14% !important;}
   .visual-glow{width:min(88vw,430px) !important;height:min(88vw,430px) !important;top:8% !important;}
   .showcase-slogan{display:none !important;}
   .impact-stack{transform:scale(.76);right:1% !important;bottom:0 !important;}
 }
-@media (prefers-reduced-motion:reduce){
-  .portrait-shell img{animation:none !important;}
-}
+@media (prefers-reduced-motion:reduce){.portrait-shell img{animation:none !important;}}
