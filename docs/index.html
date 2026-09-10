@@ -28,12 +28,8 @@
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="hero-v2.css?v=20260908-2359" />
-  <style>
-    .case-preview-grid{margin-top:48px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.case-preview{border-radius:24px;padding:30px;min-height:260px;display:flex;flex-direction:column;transition:.25s}.case-preview:hover{transform:translateY(-5px);border-color:rgba(130,91,255,.36)}.case-preview .case-type{font-size:.66rem;letter-spacing:.16em;color:#9a7bff;font-weight:850}.case-preview h3{font-size:1.55rem;line-height:1.1;letter-spacing:-.035em;margin:28px 0 12px}.case-preview p{color:#9fa4b3;margin:0}.case-preview a{margin-top:auto;padding-top:24px;color:#9a7bff;font-size:.82rem;font-weight:750}@media(max-width:800px){.case-preview-grid{grid-template-columns:1fr}}
-  </style>
-
-  <script type="application/ld+json">
+  <link rel="stylesheet" href="home.css" />
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -69,6 +65,7 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="ambient ambient-a" aria-hidden="true"></div>
   <div class="ambient ambient-b" aria-hidden="true"></div>
 
@@ -77,7 +74,7 @@
       <span class="logo">BS</span>
       <span class="brandcopy"><strong>Billal Hossain Shishir</strong><small>AI · DATA · SOFTWARE</small></span>
     </a>
-    <nav class="topnav" aria-label="Main navigation">
+    <nav id="main-navigation" class="topnav" aria-label="Main navigation">
       <a class="active" href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -87,10 +84,10 @@
       <a href="#contact">Contact</a>
     </nav>
     <a class="availability" href="#contact"><span></span> Open to Opportunities <b>→</b></a>
-    <button class="mobile-menu" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <button type="button" class="mobile-menu" aria-controls="main-navigation" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero showcase shell" id="home">
       <div class="hero-noise" aria-hidden="true"></div>
       <div class="hero-dots hero-dots-left" aria-hidden="true"></div>
@@ -135,7 +132,7 @@
         <div class="visual-glow"></div>
         <div class="spark s1"></div><div class="spark s2"></div><div class="spark s3"></div><div class="spark s4"></div>
         <div class="portrait-shell">
-          <img src="assets/billal-hero.jpg?v=20260908-2359" alt="Billal Hossain Shishir" />
+          <img src="assets/billal-cutout-professional.webp" alt="Billal Hossain Shishir" fetchpriority="high" decoding="async" />
         </div>
         <div class="showcase-slogan">Turn<br>Data into<br>a Better<br>Tomorrow.</div>
         <div class="impact-stack">
@@ -333,7 +330,7 @@
   </main>
 
   <footer class="shell footer">
-    <span>© <span id="year"></span> Billal Hossain Shishir</span>
+    <span>© <span id="year">2026</span> Billal Hossain Shishir</span>
     <span>Hobart, Tasmania · Built for GitHub Pages</span>
   </footer>
 
