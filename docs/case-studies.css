@@ -1,112 +1,87 @@
 .case-page {
-  padding-top:145px;
-  padding-bottom:80px;
+  padding-top:64px;
+  padding-bottom:72px
 }
 
 .case-intro {
-  max-width:920px;
-}
-
-.case-intro .eyebrow {
-  margin-bottom:14px;
+  max-width:860px
 }
 
 .case-intro h1 {
-  margin:0;
-  font-size:clamp(3rem,6vw,6rem);
-  line-height:.98;
-  letter-spacing:-.06em;
+  font-size:clamp(36px,5vw,62px);
+  margin:16px 0 24px
 }
 
 .case-intro p {
-  max-width:760px;
-  color:#a3a7b4;
-  font-size:1.05rem;
-  margin:22px 0 0;
+  max-width:740px;
+  font-size:17px
 }
 
 .case-list {
   display:grid;
-  gap:22px;
-  margin-top:56px;
+  gap:24px;
+  margin-top:48px
 }
 
 .case-study {
-  border-radius:24px;
-  padding:38px;
+  padding:36px;
+  border-radius:var(--radius);
+  scroll-margin-top:110px
 }
 
 .case-meta {
   display:flex;
   flex-wrap:wrap;
-  gap:10px;
-  margin-bottom:18px;
-}
-
-.case-meta span {
-  font-size:.68rem;
-  padding:7px 10px;
-  border:1px solid rgba(255,255,255,.1);
-  border-radius:999px;
-  color:#a98eff;
-  background:rgba(125,88,255,.08);
+  gap:8px;
+  margin-bottom:24px
 }
 
 .case-study h2 {
-  font-size:clamp(2rem,4vw,3.2rem);
-  letter-spacing:-.045em;
-  margin:0 0 12px;
+  max-width:850px;
+  font-size:clamp(26px,3.2vw,38px);
+  margin:0 0 18px
 }
 
 .case-study h3 {
-  font-size:1rem;
-  color:#9a7bff;
-  margin:26px 0 7px;
-  letter-spacing:.03em;
+  font-size:18px;
+  color:var(--accent);
+  margin:28px 0 10px
 }
 
-.case-study p {
-  color:#a3a7b4;
-  margin:0;
-  max-width:1050px;
-}
-
-.case-study ul {
-  margin:10px 0 0;
-  padding-left:20px;
-  color:#a3a7b4;
+.case-study p,.case-study ul {
+  max-width:900px;
+  color:var(--muted)
 }
 
 .case-study li {
-  margin:7px 0;
+  margin:8px 0
 }
 
 .case-cta {
-  margin-top:26px;
   display:flex;
-  gap:12px;
   flex-wrap:wrap;
+  gap:12px;
+  margin-top:26px
 }
 
 .back-link {
-  display:inline-flex;
-  margin-top:40px;
-  color:#9a7bff;
-  font-weight:750;
+  display:inline-block;
+  margin-top:32px;
+  color:var(--accent)
 }
 
 @media(max-width:760px) {
   .case-page {
-    padding-top:120px;
-  }
-
-  .case-study {
-    padding:26px;
-  }
-
-  .case-intro h1 {
-    font-size:3.1rem;
-  }
-
+  padding-top:40px
 }
 
+.case-study {
+  padding:24px
+}
+
+.case-intro p {
+  font-size:16px
+}
+
+
+}
