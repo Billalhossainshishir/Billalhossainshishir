@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Case Studies | Billal Hossain Shishir</title>
-  <meta name="description" content="Case studies from Billal Hossain Shishir covering AI Helpdesk Copilot, full-stack applications, machine learning, cloud data and industry delivery." />
+  <meta name="description" content="Case studies from Billal Hossain Shishir covering AI applications, real-time data engineering, IoT pipelines, machine learning, cloud data and industry delivery." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Billal Hossain Shishir" />
   <meta name="theme-color" content="#0b1018" />
@@ -15,14 +15,14 @@
   <meta property="og:locale" content="en_AU" />
   <meta property="og:site_name" content="Billal Hossain Shishir Portfolio" />
   <meta property="og:title" content="Case Studies | Billal Hossain Shishir" />
-  <meta property="og:description" content="Full-stack AI, machine learning, cloud data and industry project case studies from Billal Hossain Shishir, including the live AI Helpdesk Copilot." />
+  <meta property="og:description" content="Full-stack AI, real-time data engineering, IoT, machine learning and industry project case studies from Billal Hossain Shishir." />
   <meta property="og:url" content="https://billalhossain.com.au/case-studies.html" />
   <meta property="og:image" content="https://billalhossain.com.au/assets/billal-hero.jpg" />
   <meta property="og:image:alt" content="Billal Hossain Shishir portfolio" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Case Studies | Billal Hossain Shishir" />
-  <meta name="twitter:description" content="Full-stack AI, machine learning, cloud data and industry project case studies, including the live AI Helpdesk Copilot." />
+  <meta name="twitter:description" content="Full-stack AI, real-time data engineering, IoT, machine learning and industry project case studies." />
   <meta name="twitter:image" content="https://billalhossain.com.au/assets/billal-hero.jpg" />
 
   <link rel="stylesheet" href="styles.css?v=8417df4f9e55" />
@@ -34,7 +34,7 @@
     "@type": "CollectionPage",
     "name": "Billal Hossain Shishir Case Studies",
     "url": "https://billalhossain.com.au/case-studies.html",
-    "description": "Case studies covering the live AI Helpdesk Copilot, full-stack applications, machine learning, cloud data processing and industry innovation.",
+    "description": "Case studies covering AI Helpdesk Copilot, real-time IoT data engineering, machine learning, cloud data processing and industry innovation.",
     "author": {
       "@type": "Person",
       "name": "Billal Hossain Shishir",
@@ -122,6 +122,41 @@
         <h3>What I learned</h3>
         <p>This project taught me how different parts of a practical software system fit together. Building the classifier was only one part of the work. I also had to think about API contracts, persistence, user workflows, explainable decisions, retrieval, testing, dashboard reliability and deployment. One of the most useful lessons was that AI features are more valuable when they support a clear operational workflow rather than existing as isolated model predictions.</p>
         <section class="try-system" id="helpdesk-try" aria-labelledby="helpdesk-try-heading"><h3 id="helpdesk-try-heading">Try the live system</h3><p>The public demo requires no login. Use fictional details, such as Alex Demo and alex@example.com, because submitted tickets are visible in the public technician dashboard.</p><ol><li>Open the customer portal.</li><li>Enter a fictional name and email.</li><li>Describe an IT problem or select a sample issue.</li><li>Analyse the issue.</li><li>Review the predicted category, priority and troubleshooting suggestions.</li><li>Create the support ticket.</li><li>Open the technician dashboard.</li><li>Find the new ticket.</li><li>Assign it, add a note and change its status.</li><li>Resolve the incident and observe the analytics update.</li></ol><div class="case-cta"><a class="btn primary" href="https://ai-helpdesk-copilot.onrender.com" target="_blank" rel="noreferrer">Open Live Demo ↗</a><a class="btn outline" href="https://github.com/Billalhossainshishir/ai-helpdesk-copilot" target="_blank" rel="noreferrer">View GitHub ↗</a><a class="btn outline" href="https://ai-helpdesk-copilot.onrender.com/docs" target="_blank" rel="noreferrer">View API Docs ↗</a></div></section>
+      </article>
+
+      <article class="case-study glass helpdesk-study" id="real-time-pipeline">
+        <div class="case-meta"><span>DATA ENGINEERING</span><span>IOT</span><span>BACKEND</span><span>ANOMALY DETECTION</span></div>
+        <span class="live-badge"><i aria-hidden="true"></i> LIVE PROJECT · SEP 2026</span>
+        <h2>Real-Time Data Engineering Pipeline — from simulated telemetry to operational analytics</h2>
+        <p>I built this project to demonstrate practical data-engineering capability beyond notebooks and static dashboards. It processes simulated smart-building sensor events through validation, transformation, persistence, anomaly detection, dead-letter handling and operational monitoring.</p>
+        <dl class="helpdesk-stats"><div><dt>Simulated devices</dt><dd>10</dd></div><div><dt>Anomaly methods</dt><dd>3</dd></div><div><dt>Docker services</dt><dd>5</dd></div><div><dt>Backend API tests</dt><dd>9</dd></div></dl>
+        <div class="case-cta"><a class="btn primary" href="https://billalhossainshishir.github.io/real-time-data-engineering-pipeline/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a class="btn outline" href="https://github.com/Billalhossainshishir/real-time-data-engineering-pipeline" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="btn outline" href="https://github.com/Billalhossainshishir/real-time-data-engineering-pipeline/blob/main/docs/architecture.md" target="_blank" rel="noopener noreferrer">Architecture ↗</a></div>
+        <nav class="study-nav" aria-label="Real-Time Data Engineering Pipeline case study sections"><a href="#pipeline-solution">Solution</a><a href="#pipeline-architecture">Architecture</a><a href="#pipeline-quality">Data quality</a><a href="#pipeline-anomalies">Anomaly detection</a><a href="#pipeline-observability">Observability</a><a href="#pipeline-testing">Testing</a></nav>
+        <h3>The problem</h3>
+        <p>A polished chart shows the final output, but it does not explain how raw events become trustworthy operational data. I wanted the project to make ingestion, schema enforcement, failure isolation, enrichment, persistence and detection visible while remaining quick for a recruiter to explore.</p>
+        <h3 id="pipeline-solution">The solution</h3>
+        <p>The project combines an instant public demonstration with a deeper engineering implementation. The GitHub Pages experience simulates 10 smart-building rooms in the browser and lets a visitor start or pause the stream, inject an anomaly, inject malformed data and reset the system. The repository contains the complete server-side pipeline.</p>
+        <aside class="evidence-note"><strong>How the live demo works</strong><p>The public GitHub Pages demo runs client-side for instant recruiter access. It is not connected to a hosted Python, FastAPI, PostgreSQL or MQTT service. The full FastAPI, PostgreSQL and MQTT engineering implementation is available in the GitHub repository and runs through Docker Compose.</p></aside>
+        <figure class="study-screenshot"><a href="assets/real-time-pipeline-dashboard.png" target="_blank" rel="noopener noreferrer"><img src="assets/real-time-pipeline-dashboard.png" width="1600" height="1100" alt="Real-Time Data Engineering Pipeline browser demo showing simulated IoT metrics, processing stages and live charts" loading="lazy" decoding="async" /></a><figcaption>The public browser demo provides simulated telemetry, metrics, charts and controls without requiring login or backend startup.</figcaption></figure>
+        <h3 id="pipeline-architecture">Backend architecture</h3>
+        <ol class="workflow-steps"><li>Python sensor simulator</li><li>MQTT / Mosquitto broker</li><li>Python consumer worker</li><li>Pydantic validation</li><li>Transformation and enrichment</li><li>Three-stage anomaly detection</li><li>PostgreSQL persistence</li><li>FastAPI analytics API</li><li>Operational monitoring</li></ol>
+        <p>Docker Compose connects five services: PostgreSQL, Mosquitto, FastAPI, the MQTT consumer worker and the sensor simulator. Accepted events pass through the worker and processing services before they are stored and exposed through analytics endpoints.</p>
+        <h3>Transformation and enrichment</h3>
+        <p>The backend normalises timestamps to UTC, converts energy usage from kilowatts to watts, and derives temperature, humidity and energy bands plus a comfort status. These fields make the transformation stage a real processing step and provide useful attributes for downstream analytics.</p>
+        <h3 id="pipeline-quality">Data quality and dead-letter handling</h3>
+        <p>Pydantic validates device identifiers, numeric sensor readings, humidity ranges, non-negative energy values and timestamps. Invalid HTTP and MQTT payloads are stored in <code>dead_letter_events</code> with their source and failure reason, while a pipeline audit event makes the rejection visible. Bad data is isolated instead of crashing the pipeline or disappearing silently.</p>
+        <h3 id="pipeline-anomalies">Three anomaly-detection approaches</h3>
+        <div class="study-columns"><div><h4>Explainable detectors</h4><ul><li>Rule thresholds catch known limits such as temperatures above 35°C or below 10°C.</li><li>Rolling 3-sigma analysis compares a reading with recent history for the same device.</li></ul></div><div><h4>Machine-learning detector</h4><ul><li>Isolation Forest analyses temperature, humidity and energy together.</li><li>The multivariate detector runs after sufficient per-device history is available.</li></ul></div></div>
+        <h3>Database and API</h3>
+        <p>SQLAlchemy models persist <code>devices</code>, <code>sensor_readings</code>, <code>alerts</code>, <code>pipeline_events</code> and <code>dead_letter_events</code>. FastAPI provides ingestion, health, recent readings, alerts, dead letters, pipeline events, device analytics, energy aggregation, anomaly summaries and simulation controls.</p>
+        <h3 id="pipeline-observability">Observability</h3>
+        <p>The system records explicit pipeline-stage audit events for validation, transformation, storage and detection. The dashboard and API expose device state, event throughput, freshness, anomaly alerts, rejected events and operational summaries so the processing path can be inspected instead of inferred.</p>
+        <h3 id="pipeline-testing">Testing and CI</h3>
+        <p>The pytest suite covers database health, valid ingestion, transformation output, invalid and unknown-device handling, dead-letter persistence, threshold and statistical anomalies, pipeline-stage logging, analytics and reset behaviour. GitHub Actions runs the tests and then starts the complete Docker stack to verify that MQTT simulator events pass through Mosquitto and the worker into PostgreSQL and become visible through FastAPI.</p>
+        <div class="tags"><span>Python</span><span>FastAPI</span><span>Pydantic</span><span>SQLAlchemy</span><span>PostgreSQL</span><span>MQTT</span><span>Mosquitto</span><span>scikit-learn</span><span>Isolation Forest</span><span>Docker Compose</span><span>pytest</span><span>GitHub Actions</span><span>JavaScript</span><span>Chart.js</span></div>
+        <h3>Result</h3>
+        <p>The final project demonstrates event-driven data engineering, backend API design, messaging, validation, transformation, database modelling, statistical and machine-learning anomaly detection, observability, containerisation and automated testing. Its public browser layer makes those ideas immediately explorable while the repository preserves the complete implementation and infrastructure evidence.</p>
+        <section class="try-system" aria-labelledby="pipeline-try-heading"><h3 id="pipeline-try-heading">Try the live pipeline</h3><p>Open the public demo, start the simulation, then inject an anomaly and an invalid event. Watch the accepted event reach the charts and alert feed while the malformed payload appears in the dead-letter queue.</p><div class="case-cta"><a class="btn primary" href="https://billalhossainshishir.github.io/real-time-data-engineering-pipeline/" target="_blank" rel="noopener noreferrer">Open Live Demo ↗</a><a class="btn outline" href="https://github.com/Billalhossainshishir/real-time-data-engineering-pipeline" target="_blank" rel="noopener noreferrer">View Backend on GitHub ↗</a><a class="btn outline" href="https://github.com/Billalhossainshishir/real-time-data-engineering-pipeline/blob/main/docs/case-study.md" target="_blank" rel="noopener noreferrer">Repository Case Study ↗</a></div></section>
       </article>
 
       <article class="case-study glass" id="ramify">
