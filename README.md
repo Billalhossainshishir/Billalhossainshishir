@@ -10,6 +10,15 @@ I build practical machine-learning, data, cloud and software projects using **Py
 
 ## Selected Projects
 
+### [AI Helpdesk Copilot](https://github.com/Billalhossainshishir/ai-helpdesk-copilot) — Live Project
+**Python · FastAPI · PostgreSQL · scikit-learn · JavaScript · pytest · Docker · Render**
+
+Live AI-assisted IT service desk combining text classification, explainable priority rules, troubleshooting retrieval, ticket management, technician workflows, similar-incident search and operational analytics.
+
+**Evidence:** 25 automated tests · 490 synthetic training examples · 70 troubleshooting articles · 7 support categories. Synthetic evaluation scores demonstrate the pipeline, not production accuracy.
+
+[Live Demo](https://ai-helpdesk-copilot.onrender.com) · [Case Study](https://billalhossain.com.au/case-studies.html#ai-helpdesk)
+
 ### ⭐ [Star Type Classification with Machine Learning](https://github.com/Billalhossainshishir/star-classification-machine-learning)
 **Python · scikit-learn · Random Forest · SVC · GridSearchCV**
 

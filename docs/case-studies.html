@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Case Studies | Billal Hossain Shishir</title>
-  <meta name="description" content="Case studies from Billal Hossain Shishir covering AI product delivery, machine learning, cloud data processing and industry innovation." />
+  <meta name="description" content="Case studies from Billal Hossain Shishir covering AI Helpdesk Copilot, full-stack applications, machine learning, cloud data and industry delivery." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Billal Hossain Shishir" />
   <meta name="theme-color" content="#0b1018" />
@@ -15,18 +15,18 @@
   <meta property="og:locale" content="en_AU" />
   <meta property="og:site_name" content="Billal Hossain Shishir Portfolio" />
   <meta property="og:title" content="Case Studies | Billal Hossain Shishir" />
-  <meta property="og:description" content="AI, machine learning, cloud data and industry project case studies from Billal Hossain Shishir." />
+  <meta property="og:description" content="Full-stack AI, machine learning, cloud data and industry project case studies from Billal Hossain Shishir, including the live AI Helpdesk Copilot." />
   <meta property="og:url" content="https://billalhossain.com.au/case-studies.html" />
   <meta property="og:image" content="https://billalhossain.com.au/assets/billal-hero.jpg" />
   <meta property="og:image:alt" content="Billal Hossain Shishir portfolio" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Case Studies | Billal Hossain Shishir" />
-  <meta name="twitter:description" content="AI, machine learning, cloud data and industry project case studies." />
+  <meta name="twitter:description" content="Full-stack AI, machine learning, cloud data and industry project case studies, including the live AI Helpdesk Copilot." />
   <meta name="twitter:image" content="https://billalhossain.com.au/assets/billal-hero.jpg" />
 
-  <link rel="stylesheet" href="styles.css?v=67662067f111" />
-  <link rel="stylesheet" href="case-studies.css?v=a10d73ef9ec4" />
+  <link rel="stylesheet" href="styles.css?v=8417df4f9e55" />
+  <link rel="stylesheet" href="case-studies.css?v=e5ea1d71b94c" />
 
   <script type="application/ld+json">
   {
@@ -34,7 +34,7 @@
     "@type": "CollectionPage",
     "name": "Billal Hossain Shishir Case Studies",
     "url": "https://billalhossain.com.au/case-studies.html",
-    "description": "Case studies covering AI product delivery, machine learning, cloud data processing and industry innovation.",
+    "description": "Case studies covering the live AI Helpdesk Copilot, full-stack applications, machine learning, cloud data processing and industry innovation.",
     "author": {
       "@type": "Person",
       "name": "Billal Hossain Shishir",
@@ -71,6 +71,59 @@
     </section>
 
     <section class="case-list" aria-label="Case studies">
+      <article class="case-study glass helpdesk-study" id="ai-helpdesk">
+        <div class="case-meta"><span>AI APPLICATION</span><span>FULL-STACK</span><span>MACHINE LEARNING</span><span>IT SUPPORT</span></div>
+        <span class="live-badge"><i aria-hidden="true"></i> LIVE PROJECT</span>
+        <h2>AI Helpdesk Copilot — building an explainable AI-assisted service desk</h2>
+        <p>IT service desks receive large numbers of unstructured support requests. Before a technician can solve an issue, they often need to determine what kind of problem it is, how urgent it may be, what troubleshooting information is relevant, and whether similar incidents have already been resolved. I built AI Helpdesk Copilot as a portfolio project to explore how machine learning, transparent business rules, information retrieval and a practical ticketing workflow can work together in one system.</p>
+        <dl class="helpdesk-stats"><div><dt>Automated tests</dt><dd>25</dd></div><div><dt>Synthetic training examples</dt><dd>490</dd></div><div><dt>Troubleshooting articles</dt><dd>70</dd></div><div><dt>Support categories</dt><dd>7</dd></div></dl>
+        <div class="case-cta"><a class="btn primary" href="https://ai-helpdesk-copilot.onrender.com" target="_blank" rel="noreferrer">Live Demo ↗</a><a class="btn outline" href="https://github.com/Billalhossainshishir/ai-helpdesk-copilot" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        <nav class="study-nav" aria-label="AI Helpdesk case study sections"><a href="#helpdesk-workflow">Workflow</a><a href="#helpdesk-ai">How the AI works</a><a href="#helpdesk-technician">Technician dashboard</a><a href="#helpdesk-data">Data & API</a><a href="#helpdesk-decisions">Design decisions</a><a href="#helpdesk-try">Try it yourself</a></nav>
+        <h3>The problem</h3>
+        <p>A support request often starts as a short piece of free-form text such as “My laptop keeps disconnecting from Wi-Fi” or “I clicked a suspicious link and entered my password.” The system needs to turn that description into useful operational information without hiding important decisions behind a black box.</p>
+        <h3>The solution</h3>
+        <p>AI Helpdesk Copilot provides an end-to-end support workflow. A customer enters their name, email, device information, issue title and description. The application analyses the request, predicts an IT support category, determines a priority using explainable rules, retrieves relevant troubleshooting articles and allows the customer to create a real support ticket. The technician dashboard then provides ticket management, assignment, notes, resolution tracking, similar-incident search and operational analytics.</p>
+        <h3 id="helpdesk-workflow">The end-to-end workflow</h3>
+        <ol class="workflow-steps"><li>Customer reports an issue</li><li>Machine-learning category prediction</li><li>Explainable priority detection</li><li>Knowledge-base retrieval</li><li>Troubleshooting suggestions</li><li>Support ticket creation</li><li>Technician dashboard</li><li>Assignment and internal notes</li><li>Similar resolved incident search</li><li>Resolution</li><li>Analytics update</li></ol>
+        <figure class="study-screenshot"><a href="assets/ai-helpdesk-customer-portal.jpg" target="_blank" rel="noreferrer"><img src="assets/ai-helpdesk-customer-portal.jpg" width="650" height="850" alt="Customer portal and AI triage results for a fictional Wi-Fi support request" loading="lazy" decoding="async" /></a><figcaption>Real customer portal with fictional requester details. Click to inspect the full screenshot.</figcaption></figure>
+        <h3 id="helpdesk-ai">How the AI works</h3>
+        <p>The project deliberately combines machine learning with deterministic rules. Ticket category prediction uses TF-IDF text features with Logistic Regression to predict one of seven support categories.</p>
+        <div class="tags" aria-label="Support categories"><span>Network</span><span>Hardware</span><span>Software</span><span>Account</span><span>Email</span><span>Security</span><span>Other</span></div>
+        <h4>Training data</h4>
+        <p>The repository contains 490 synthetic, portfolio-safe IT support examples. The dataset demonstrates the complete model-training and serving workflow without exposing real customer support data.</p>
+        <aside class="evidence-note"><strong>What the evaluation shows</strong><p>The synthetic dataset is intentionally controlled. Its evaluation results demonstrate that the ML pipeline works correctly; they do not represent expected accuracy in a real production service desk.</p></aside>
+        <h3>Explainable priority rules</h3>
+        <p>Priority is deliberately rule-based. Support urgency depends on operational impact, so the system keeps this decision transparent and controllable. It considers security incidents, account compromise, major outages, business-impacting connectivity problems and less urgent routine requests.</p>
+        <div class="tags" aria-label="Priority levels"><span>Low</span><span>Medium</span><span>High</span><span>Critical</span></div>
+        <p>This separation allows machine learning to handle text categorisation while operational priority remains explainable and auditable.</p>
+        <h3>Troubleshooting retrieval</h3>
+        <p>After analysing an issue, the application searches 70 troubleshooting knowledge articles and returns the three most relevant matches. Retrieval uses TF-IDF cosine similarity so the relationship between the reported issue and the suggested guidance remains understandable. The interface exposes retrieval similarity and identifiable source articles.</p>
+        <h3 id="helpdesk-technician">Technician workflow</h3>
+        <p>The technician dashboard turns AI analysis into a usable service-management workflow. Technicians can search and filter tickets, assign incidents, change status, add internal notes, inspect requester information, find similar resolved incidents and record final resolutions. Newly submitted customer tickets appear automatically without requiring a manual page refresh.</p>
+        <div class="study-columns"><div><h4>Operational analytics</h4><ul><li>Open and critical ticket counts</li><li>Resolved today, average resolution time and resolution rate</li><li>Category and priority distribution</li><li>Daily ticket volume</li></ul></div><div><h4>Incident management</h4><ul><li>Status, priority and category filters</li><li>Requester search and ticket assignment</li><li>Technician notes and resolution workflow</li><li>Similar resolved incident matching</li></ul></div></div>
+        <figure class="study-screenshot"><a href="assets/ai-helpdesk-technician-dashboard.jpg" target="_blank" rel="noreferrer"><img src="assets/ai-helpdesk-technician-dashboard.jpg" width="725" height="900" alt="Live technician dashboard showing KPI cards, charts, filters and a queue filtered to synthetic demo tickets" loading="lazy" decoding="async" /></a><figcaption>Technician dashboard filtered to demo tickets. Metrics are a snapshot of the live demo, not production results.</figcaption></figure>
+        <h3>Learning from resolved incidents</h3>
+        <p>For active tickets, the system compares the issue with previously resolved incidents using TF-IDF similarity. This gives technicians another source of evidence by showing how related problems were handled previously. These matches are retrieved from operational ticket history, not generated by an LLM.</p>
+        <h3 id="helpdesk-data">Data model</h3>
+        <p>The backend uses SQLAlchemy with PostgreSQL for the deployed application and SQLite as a lightweight local-development fallback.</p>
+        <div class="table-scroll" role="region" aria-label="Database tables" tabindex="0"><table class="study-table"><thead><tr><th scope="col">Table</th><th scope="col">Responsibility</th></tr></thead><tbody><tr><td><code>tickets</code></td><td>Ticket number, requester name and email, title, description, device type, category, priority, status, assigned technician, creation and resolution times, and final resolution.</td></tr><tr><td><code>ticket_notes</code></td><td>Notes linked to tickets, with author, note text and creation time.</td></tr><tr><td><code>knowledge_base</code></td><td>Article title, category, problem, solution and retrieval keywords.</td></tr></tbody></table></div>
+        <p>Ticket statuses: Open · In Progress · Waiting · Resolved · Closed.</p>
+        <h3>Backend and API design</h3>
+        <p>The application is built around a FastAPI backend with validated API endpoints for AI analysis, ticket management, technician notes, similar-incident retrieval, resolution and analytics.</p>
+        <details class="api-details"><summary>Explore the API endpoints</summary><div class="table-scroll" role="region" aria-label="API endpoints" tabindex="0"><table class="study-table"><thead><tr><th scope="col">Method</th><th scope="col">Endpoint</th><th scope="col">Purpose</th></tr></thead><tbody><tr><td>POST</td><td><code>/analyse-issue</code></td><td>Analyse the complete support request</td></tr><tr><td>POST</td><td><code>/predict-category</code></td><td>Predict an IT support category</td></tr><tr><td>POST</td><td><code>/predict-priority</code></td><td>Apply explainable priority rules</td></tr><tr><td>POST</td><td><code>/suggest-solution</code></td><td>Retrieve troubleshooting articles</td></tr><tr><td>POST</td><td><code>/tickets</code></td><td>Create a support ticket</td></tr><tr><td>GET</td><td><code>/tickets</code></td><td>Search and filter tickets</td></tr><tr><td>GET</td><td><code>/tickets/{id}</code></td><td>Inspect a ticket</td></tr><tr><td>PATCH</td><td><code>/tickets/{id}</code></td><td>Update status and assignment</td></tr><tr><td>POST</td><td><code>/tickets/{id}/notes</code></td><td>Add a technician note</td></tr><tr><td>GET</td><td><code>/tickets/{id}/similar</code></td><td>Find similar resolved incidents</td></tr><tr><td>POST</td><td><code>/tickets/{id}/resolve</code></td><td>Record a resolution</td></tr><tr><td>GET</td><td><code>/analytics</code></td><td>Read operational metrics</td></tr><tr><td>GET</td><td><code>/health</code></td><td>Check service health</td></tr></tbody></table></div></details>
+        <p><a class="text-link" href="https://ai-helpdesk-copilot.onrender.com/docs" target="_blank" rel="noreferrer">Explore interactive API documentation ↗</a></p>
+        <h3>Testing and reliability</h3>
+        <p>The project includes 25 automated tests using pytest and FastAPI TestClient. Tests cover ticket CRUD operations, automatic triage, classifier output, priority rules, knowledge retrieval, technician notes, similar-incident search, analytics and frontend routes. GitHub Actions runs the automated test suite when changes are pushed to the repository.</p>
+        <h3>Deployment</h3>
+        <p>The application is deployed as a public FastAPI web service on Render with PostgreSQL persistence. The production service is built directly from the GitHub repository and automatically redeploys from the main branch. Uvicorn serves the Python/FastAPI application.</p>
+        <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>scikit-learn</span><span>TF-IDF</span><span>Logistic Regression</span><span>JavaScript</span><span>Chart.js</span><span>pytest</span><span>Docker</span><span>Render</span><span>Docker Compose</span><span>Uvicorn</span><span>GitHub Actions</span></div>
+        <h3 id="helpdesk-decisions">Key design decisions</h3>
+        <dl class="design-decisions"><div><dt>CRUD before AI</dt><dd>The basic ticket-management workflow remains useful independently of the machine-learning component.</dd></div><div><dt>Classical ML baseline</dt><dd>TF-IDF and Logistic Regression provide a reproducible, explainable baseline for ticket classification.</dd></div><div><dt>Transparent priority rules</dt><dd>Urgency is treated as an operational business decision rather than an opaque prediction.</dd></div><div><dt>Visible retrieval evidence</dt><dd>Troubleshooting recommendations are connected to identifiable knowledge-base matches.</dd></div><div><dt>Synthetic demo data</dt><dd>Training examples, knowledge articles and seeded support tickets are portfolio-safe.</dd></div><div><dt>No recruiter login</dt><dd>The public demo allows a reviewer to understand and test the main workflow quickly.</dd></div></dl>
+        <h3>What I learned</h3>
+        <p>This project taught me how different parts of a practical software system fit together. Building the classifier was only one part of the work. I also had to think about API contracts, persistence, user workflows, explainable decisions, retrieval, testing, dashboard reliability and deployment. One of the most useful lessons was that AI features are more valuable when they support a clear operational workflow rather than existing as isolated model predictions.</p>
+        <section class="try-system" id="helpdesk-try" aria-labelledby="helpdesk-try-heading"><h3 id="helpdesk-try-heading">Try the live system</h3><p>The public demo requires no login. Use fictional details, such as Alex Demo and alex@example.com, because submitted tickets are visible in the public technician dashboard.</p><ol><li>Open the customer portal.</li><li>Enter a fictional name and email.</li><li>Describe an IT problem or select a sample issue.</li><li>Analyse the issue.</li><li>Review the predicted category, priority and troubleshooting suggestions.</li><li>Create the support ticket.</li><li>Open the technician dashboard.</li><li>Find the new ticket.</li><li>Assign it, add a note and change its status.</li><li>Resolve the incident and observe the analytics update.</li></ol><div class="case-cta"><a class="btn primary" href="https://ai-helpdesk-copilot.onrender.com" target="_blank" rel="noreferrer">Open Live Demo ↗</a><a class="btn outline" href="https://github.com/Billalhossainshishir/ai-helpdesk-copilot" target="_blank" rel="noreferrer">View GitHub ↗</a><a class="btn outline" href="https://ai-helpdesk-copilot.onrender.com/docs" target="_blank" rel="noreferrer">View API Docs ↗</a></div></section>
+      </article>
+
       <article class="case-study glass" id="ramify">
         <div class="case-meta"><span>INDUSTRY PROJECT</span><span>AI SYSTEMS</span><span>PROJECT DELIVERY</span></div>
         <h2>RAMIFY OS — building an auditable product-trust demonstration</h2>

@@ -674,3 +674,39 @@ html:not(.js) .mobile-menu {
 
 
 }
+
+/* Featured live application and shared evidence metrics. */
+.helpdesk-feature {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 36px;
+  background: linear-gradient(130deg, #182037, #111923);
+  border-color: #51496d;
+}
+.helpdesk-copy { min-width: 0; }
+.project-title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 24px 0 16px; }
+.project-title-row h3 { margin: 0; font-size: clamp(28px, 3vw, 36px); }
+.helpdesk-copy > p { margin: 0; }
+.live-badge { display: inline-flex; align-items: center; gap: 7px; padding: 5px 9px; border: 1px solid #365b50; border-radius: 6px; background: #142e28; color: #acf0cb; font-size: 12px; font-weight: 650; white-space: nowrap; }
+.live-badge i { width: 6px; height: 6px; border-radius: 50%; background: #8fe0af; }
+.helpdesk-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 26px 0; border-block: 1px solid var(--line); padding: 20px 0; gap: 16px; }
+.helpdesk-stats > div { display: flex; flex-direction: column-reverse; justify-content: end; gap: 4px; }
+.helpdesk-stats dt { font-size: 13px; line-height: 1.5; color: var(--muted); }
+.helpdesk-stats dd { margin: 0; font-size: 30px; line-height: 1.2; font-weight: 650; color: var(--text); }
+.project-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.project-screenshot { min-width: 0; margin: 0; align-self: center; }
+.project-screenshot a { display: block; border: 1px solid #40516b; border-radius: 12px; overflow: hidden; background: #f5f7fc; }
+.project-screenshot img { width: 100%; height: auto; }
+.project-screenshot figcaption { margin-top: 12px; font-size: 13px; color: var(--muted); }
+.helpdesk-preview { grid-column: 1 / -1; border-color: #51496d; }
+.helpdesk-preview p { max-width: 780px; }
+@media (max-width: 1000px) {
+  .helpdesk-feature { grid-template-columns: 1fr; }
+  .project-screenshot { width: min(100%, 720px); justify-self: center; }
+}
+@media (max-width: 480px) {
+  .helpdesk-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-head { flex-wrap: wrap; }
+  .project-actions .btn { flex: 1 1 auto; }
+}
