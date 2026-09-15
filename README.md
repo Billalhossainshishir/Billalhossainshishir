@@ -28,6 +28,15 @@ Smart-building IoT pipeline with Pydantic validation, transformation and enrichm
 
 [Live Demo](https://billalhossainshishir.github.io/real-time-data-engineering-pipeline/) · [Case Study](https://billalhossain.com.au/case-studies.html#real-time-pipeline)
 
+### [Network Monitoring & Incident System](https://github.com/Billalhossainshishir/network-monitoring-incident-system) — Live Project
+**Python · FastAPI · SQLAlchemy · PostgreSQL · Docker · pytest · GitHub Actions · JavaScript**
+
+Service-monitoring and incident-automation platform that records availability and latency, applies a three-consecutive-failure rule to reduce alert noise, creates and resolves incidents automatically, stores lifecycle events and operational metrics, and includes an optional AI Helpdesk integration.
+
+**Evidence:** 5 monitored services · deterministic incident lifecycle · 9 automated backend tests · PostgreSQL/Docker stack · CI/CD · mobile-friendly interactive recruiter demo.
+
+[Live Demo](https://billalhossainshishir.github.io/network-monitoring-incident-system/)
+
 ### ⭐ [Star Type Classification with Machine Learning](https://github.com/Billalhossainshishir/star-classification-machine-learning)
 **Python · scikit-learn · Random Forest · SVC · GridSearchCV**
 
@@ -94,7 +103,7 @@ Attended industry sessions covering AI engineering, GraphRAG, Snowflake, synthet
 ## Education
 
 **Bachelor of Information Technology — Major in Artificial Intelligence**  
-University of Tasmania · **GPA 6.11**
+University of Tasmania
 
 ---
 
