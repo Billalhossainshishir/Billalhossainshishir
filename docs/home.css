@@ -66,6 +66,36 @@
   border-top:1px solid var(--line)
 }
 
+.hero-proof {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  margin:24px 0 0;
+  padding:0
+}
+
+.hero-proof div {
+  padding:13px 14px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#101823
+}
+
+.hero-proof dt {
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.4;
+  text-transform:uppercase;
+  letter-spacing:.07em
+}
+
+.hero-proof dd {
+  margin:4px 0 0;
+  color:var(--text);
+  font-size:16px;
+  font-weight:650
+}
+
 .portrait-card {
   margin:0;
   position:relative;
@@ -145,6 +175,5 @@
 .hero-kicker {
   font-size:12px
 }
-
 
 }

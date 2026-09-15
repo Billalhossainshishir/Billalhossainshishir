@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Billal Hossain Shishir | AI, Data & Software Portfolio</title>
-  <meta name="description" content="Portfolio of Billal Hossain Shishir featuring a live AI helpdesk, full-stack applications, machine learning, APIs, data, cloud and software projects." />
+  <meta name="description" content="Portfolio of Billal Hossain Shishir featuring deployed AI applications, real-time data engineering, machine learning, APIs, cloud and software projects." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="author" content="Billal Hossain Shishir" />
   <meta name="google-site-verification" content="2ncyiwaYKs3h6OJeZsEFJJ34A5l7G0gyPgCTHh5dwqc" />
@@ -15,20 +15,20 @@
   <meta property="og:locale" content="en_AU" />
   <meta property="og:site_name" content="Billal Hossain Shishir Portfolio" />
   <meta property="og:title" content="Billal Hossain Shishir | AI, Data & Software Portfolio" />
-  <meta property="og:description" content="Explore a live AI helpdesk, full-stack applications, machine learning, APIs, data, cloud and software work by Billal Hossain Shishir." />
+  <meta property="og:description" content="Explore deployed AI applications, a real-time IoT data pipeline, machine learning, APIs and software work by Billal Hossain Shishir." />
   <meta property="og:url" content="https://billalhossain.com.au/" />
   <meta property="og:image" content="https://billalhossain.com.au/assets/billal-hero.jpg" />
   <meta property="og:image:alt" content="Billal Hossain Shishir portfolio" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Billal Hossain Shishir | AI, Data & Software Portfolio" />
-  <meta name="twitter:description" content="Live AI application, full-stack, machine learning, API, data, cloud and software portfolio." />
+  <meta name="twitter:description" content="Deployed AI applications, real-time data engineering, APIs, machine learning and software portfolio." />
   <meta name="twitter:image" content="https://billalhossain.com.au/assets/billal-hero.jpg" />
   <meta name="twitter:image:alt" content="Billal Hossain Shishir portfolio" />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=8417df4f9e55" />
-  <link rel="stylesheet" href="home.css?v=70900dcd760f" />
+  <link rel="stylesheet" href="styles.css?v=portfolio-advanced" />
+  <link rel="stylesheet" href="home.css?v=portfolio-advanced" />
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,6 +57,8 @@
       "Machine Learning",
       "FastAPI",
       "PostgreSQL",
+      "Data Engineering",
+      "MQTT",
       "Information Retrieval",
       "Data Analysis",
       "Software Development",
@@ -79,8 +81,8 @@
     </a>
     <nav id="main-navigation" class="topnav" aria-label="Main navigation">
       <a class="active" href="#home">Home</a>
-      <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#case-studies">Case Studies</a>
@@ -96,32 +98,123 @@
         <p class="hero-kicker">AI · Data · Software</p>
         <h1 id="hero-heading">Billal Hossain <span>Shishir</span></h1>
         <p class="hero-role">Turning data into practical solutions.</p>
-        <p class="hero-intro">Final-year IT student at the University of Tasmania, majoring in Artificial Intelligence. I build AI-assisted applications, machine-learning workflows, APIs and cloud/data systems—from problem definition and model development through testing, deployment and user-facing delivery.</p>
+        <p class="hero-intro">Final-year IT student building AI applications and real-time data pipelines with Python. Explore my deployed projects, engineering decisions and test evidence.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
           <a class="btn outline" href="Billal_Hossain_Shishir_CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
         </div>
         <div class="hero-details"><span>Hobart, Tasmania</span><span>Open to graduate roles & internships</span></div>
+        <dl class="hero-proof" aria-label="Portfolio highlights"><div><dt>Interactive demos</dt><dd>2</dd></div><div><dt>Engineering focus</dt><dd>AI + Data</dd></div><div><dt>Delivery</dt><dd>Tested</dd></div></dl>
       </div>
       <figure class="portrait-card reveal">
-        <div class="portrait-frame"><img src="assets/billal-waist-up.png?v=d9e171d9cbc3" width="1122" height="1402" alt="Waist-up portrait of Billal Hossain Shishir" fetchpriority="high" decoding="async" /></div>
+        <div class="portrait-frame"><picture><source type="image/webp" srcset="assets/billal-waist-up-640.webp 640w, assets/billal-waist-up-960.webp 960w" sizes="(max-width: 760px) min(100vw - 36px, 420px), (max-width: 1000px) 42vw, 510px" /><img src="assets/billal-waist-up.png?v=d9e171d9cbc3" width="1122" height="1402" alt="Waist-up portrait of Billal Hossain Shishir" fetchpriority="high" decoding="async" /></picture></div>
         <figcaption><span>Learning. Building. Delivering.</span><span>UTAS · Artificial Intelligence</span></figcaption>
       </figure>
     </section>
+    <section class="section shell" id="projects">
+      <div class="section-title reveal">
+        <p>01 / SELECTED PROJECTS</p>
+        <h2>Selected work, from models to delivery.</h2>
+      </div>
+
+      <div class="project-filters reveal" role="group" aria-label="Filter projects"><button class="project-filter active" type="button" data-filter="all" aria-pressed="true">All</button><button class="project-filter" type="button" data-filter="ai" aria-pressed="false">AI / ML</button><button class="project-filter" type="button" data-filter="data" aria-pressed="false">Data Engineering</button><button class="project-filter" type="button" data-filter="software" aria-pressed="false">Software</button></div>
+      <div class="project-grid">
+        <article class="project-card glass helpdesk-feature reveal" id="ai-helpdesk-project" data-category="ai software">
+          <div class="helpdesk-copy">
+            <div class="project-head"><span>01</span><em>FULL-STACK / AI / IT SUPPORT</em></div>
+            <div class="project-title-row"><h3>AI Helpdesk Copilot</h3><span class="live-badge"><i aria-hidden="true"></i> LIVE PROJECT</span></div>
+            <p>Deployed AI-assisted service desk that turns free-form requests into explainable categories, priorities and troubleshooting guidance, then supports the complete technician workflow.</p>
+            <dl class="helpdesk-stats"><div><dt>Automated tests</dt><dd>25</dd></div><div><dt>Training examples</dt><dd>490</dd></div><div><dt>Knowledge articles</dt><dd>70</dd></div></dl>
+            <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>scikit-learn</span><span>Docker</span></div>
+            <div class="project-actions"><a class="btn primary" href="https://ai-helpdesk-copilot.onrender.com" target="_blank" rel="noreferrer">Live Demo ↗</a><a class="btn outline" href="https://github.com/Billalhossainshishir/ai-helpdesk-copilot" target="_blank" rel="noreferrer">GitHub ↗</a><a class="btn outline" href="case-studies.html#ai-helpdesk">Case Study →</a></div>
+          </div>
+          <figure class="project-screenshot"><a href="assets/ai-helpdesk-customer-portal.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full AI Helpdesk customer portal screenshot"><img src="assets/ai-helpdesk-customer-portal.jpg" width="650" height="850" alt="AI Helpdesk customer portal alongside a real Network triage result, explainable priority and troubleshooting matches, using fictional demo data" loading="lazy" decoding="async" /></a><figcaption>Customer portal + AI triage · Click to enlarge</figcaption></figure>
+        </article>
+
+        <article class="project-card glass helpdesk-feature reveal" id="real-time-pipeline-project" data-category="data ai software">
+          <div class="helpdesk-copy">
+            <div class="project-head"><span>02</span><em>DATA ENGINEERING / IOT / BACKEND</em></div>
+            <div class="project-title-row"><h3>Real-Time Data Engineering Pipeline</h3><span class="live-badge"><i aria-hidden="true"></i> LIVE PROJECT</span></div>
+            <p>Smart-building IoT pipeline with validation, enrichment, dead-letter handling and three anomaly detectors. The repository contains the complete backend; the public browser demo opens instantly.</p>
+            <dl class="helpdesk-stats"><div><dt>Simulated devices</dt><dd>10</dd></div><div><dt>Anomaly methods</dt><dd>3</dd></div><div><dt>Docker services</dt><dd>5</dd></div></dl>
+            <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>MQTT</span><span>Docker</span></div>
+            <div class="project-actions"><a class="btn primary" href="https://billalhossainshishir.github.io/real-time-data-engineering-pipeline/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a class="btn outline" href="https://github.com/Billalhossainshishir/real-time-data-engineering-pipeline" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="btn outline" href="case-studies.html#real-time-pipeline">Case Study →</a></div>
+          </div>
+          <figure class="project-screenshot"><a href="assets/real-time-pipeline-dashboard.png" target="_blank" rel="noopener noreferrer" aria-label="View the full Real-Time Data Engineering Pipeline dashboard screenshot"><picture><source type="image/webp" srcset="assets/real-time-pipeline-dashboard-960.webp 960w, assets/real-time-pipeline-dashboard-1440.webp 1440w" sizes="(max-width: 1000px) min(100vw - 84px, 720px), 520px" /><img src="assets/real-time-pipeline-dashboard.png" width="1600" height="1100" alt="Real-Time Data Engineering Pipeline live demo showing smart-building metrics, pipeline stages and streaming charts" loading="lazy" decoding="async" /></picture></a><figcaption>Interactive browser demo · Click to enlarge</figcaption></figure>
+        </article>
+
+        <article class="project-card glass reveal" data-category="ai">
+          <div class="project-head"><span>03</span><em>INDUSTRY / AI</em></div>
+          <div class="project-symbol">R</div>
+          <h3>RAMIFY OS</h3>
+          <p>Project Manager for a browser-based AI product-trust demonstration that produces auditable decision receipts from structured evidence. I coordinate scope, requirements, team responsibilities, testing, documentation, demos and client feedback.</p>
+          <div class="tags"><span>AI Systems</span><span>Testing</span><span>Requirements</span><span>Project Delivery</span></div>
+          <a class="project-link" href="case-studies.html#ramify">Read the case study →</a>
+        </article>
+
+        <article class="project-card glass reveal delay-1" data-category="ai">
+          <div class="project-head"><span>04</span><em>ML PROJECT</em></div>
+          <div class="project-symbol">★</div>
+          <h3>Star Classification</h3>
+          <p>Classified six star types using Decision Tree, Random Forest and SVC. Used stratified 5-fold cross-validation, leakage prevention and GridSearchCV before a final held-out evaluation.</p>
+          <div class="metric-bar"><b>99.47%</b><span>mean cross-validation accuracy · tuned Random Forest</span></div><div class="tags"><span>Python</span><span>scikit-learn</span><span>GridSearchCV</span><span>48 held-out samples correct</span></div>
+          <a class="project-link" href="https://github.com/Billalhossainshishir/star-classification-machine-learning" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+        </article>
+
+        <article class="project-card glass reveal delay-1" data-category="data">
+          <div class="project-head"><span>05</span><em>CLOUD / DATA</em></div>
+          <div class="project-symbol">☁</div>
+          <h3>Cloud Data Processing</h3>
+          <p>Built and tested a transformation worker in a distributed Nectar Cloud workflow, encoding categorical variables and preparing numerical features for machine learning.</p>
+          <div class="metric-bar"><b>1,221</b><span>records processed in the prepared dataset</span></div>
+          <div class="tags"><span>Python</span><span>pandas</span><span>Nectar Cloud</span><span>Distributed Processing</span></div>
+          <a class="project-link" href="https://github.com/Billalhossainshishir/cloud-data-processing" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+        </article>
+
+        <article class="project-card glass reveal" data-category="software">
+          <div class="project-head"><span>06</span><em>ALGORITHMS / C</em></div>
+          <div class="project-symbol">D</div>
+          <h3>Emergency Route Planning</h3>
+          <p>Implemented weighted graph route planning using Dijkstra shortest path and a binary-heap priority queue, including route reconstruction and invalid/unreachable cases.</p>
+          <div class="metric-bar"><b>24 / 24</b><span>unit tests passed</span></div>
+          <div class="tags"><span>C</span><span>Dijkstra</span><span>Graphs</span><span>Unit Testing</span></div>
+          <a class="project-link" href="https://github.com/Billalhossainshishir/emergency-route-planning" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+        </article>
+
+        <article class="project-card glass reveal delay-1" data-category="ai">
+          <div class="project-head"><span>07</span><em>MACHINE LEARNING</em></div>
+          <div class="project-symbol">ML</div>
+          <h3>Machine Learning Model Comparison</h3>
+          <p>Compared Logistic Regression and Decision Tree models for a fictional heat-safety problem, using preprocessing, accuracy, precision, recall, F1 and confusion matrices.</p>
+          <div class="tags"><span>Python</span><span>scikit-learn</span><span>Classification</span><span>Model Evaluation</span></div>
+          <a class="project-link" href="https://github.com/Billalhossainshishir/machine-learning-model-comparison" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+        </article>
+
+        <article class="project-card glass reveal" data-category="software">
+          <div class="project-head"><span>08</span><em>DATA STRUCTURES</em></div>
+          <div class="project-symbol">DS</div>
+          <h3>Data Structures Performance</h3>
+          <p>Built a food-delivery data prototype with arrays, AVL trees, hash tables and linked lists, then benchmarked search performance as the dataset size increased.</p>
+          <div class="tags"><span>C</span><span>AVL Trees</span><span>Hash Tables</span><span>Benchmarking</span></div>
+          <a class="project-link" href="https://github.com/Billalhossainshishir/data-structures-performance" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+        </article>
+      </div>
+    </section>
+
     <section class="section shell" id="about">
       <div class="section-title reveal">
-        <p>01 / ABOUT</p>
+        <p>02 / ABOUT</p>
         <h2>A technical foundation. A practical mindset.</h2>
       </div>
       <div class="about-grid">
         <article class="big-card glass reveal">
           <div class="eyebrow">MY DIRECTION</div>
           <h3>AI + Data + Software + Delivery</h3>
-          <p>I’m developing a broad technical foundation through independent projects, university work, industry engagement and client-facing delivery. I enjoy the space where code meets real requirements: understanding the problem, designing the workflow, building the solution, testing it carefully, deploying it and explaining the result clearly.</p>
+          <p>I build practical systems from problem definition through implementation, testing and deployment. My work combines technical depth with requirements, communication and reliable delivery.</p>
           <div class="stats">
-            <div><strong>Problem Solving</strong><span>I enjoy breaking down complex problems and turning them into practical solutions.</span></div>
-            <div><strong>Team Delivery</strong><span>Comfortable working with people, requirements, testing, feedback and clear communication.</span></div>
-            <div><strong>Current Focus</strong><span>Building skills in AI, data, software and trustworthy technology for real-world impact.</span></div>
+            <div><strong>Problem Solving</strong><span>Break complex problems into clear, testable steps.</span></div>
+            <div><strong>Team Delivery</strong><span>Coordinate requirements, feedback and technical work.</span></div>
+            <div><strong>Current Focus</strong><span>AI applications, data pipelines and trustworthy software.</span></div>
           </div>
         </article>
         <article class="mini-card glass reveal delay-1">
@@ -140,110 +233,16 @@
       </div>
     </section>
 
-    <section class="section shell" id="projects">
-      <div class="section-title reveal">
-        <p>02 / SELECTED PROJECTS</p>
-        <h2>Selected work, from models to delivery.</h2>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card glass helpdesk-feature reveal" id="ai-helpdesk-project">
-          <div class="helpdesk-copy">
-            <div class="project-head"><span>01</span><em>FULL-STACK / AI / IT SUPPORT</em></div>
-            <div class="project-title-row"><h3>AI Helpdesk Copilot</h3><span class="live-badge"><i aria-hidden="true"></i> LIVE PROJECT</span></div>
-            <p>Live AI-assisted IT service desk built with Python, FastAPI, PostgreSQL and scikit-learn. It classifies support requests, applies explainable priority rules, retrieves troubleshooting guidance, creates and manages tickets, supports technician workflows, finds similar resolved incidents and provides operational analytics.</p>
-            <dl class="helpdesk-stats"><div><dt>Automated tests</dt><dd>25</dd></div><div><dt>Synthetic training examples</dt><dd>490</dd></div><div><dt>Troubleshooting articles</dt><dd>70</dd></div><div><dt>Support categories</dt><dd>7</dd></div></dl>
-            <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>scikit-learn</span><span>TF-IDF</span><span>Logistic Regression</span><span>JavaScript</span><span>Chart.js</span><span>pytest</span><span>Docker</span><span>Render</span></div>
-            <div class="project-actions"><a class="btn primary" href="https://ai-helpdesk-copilot.onrender.com" target="_blank" rel="noreferrer">Live Demo ↗</a><a class="btn outline" href="https://github.com/Billalhossainshishir/ai-helpdesk-copilot" target="_blank" rel="noreferrer">GitHub ↗</a><a class="btn outline" href="case-studies.html#ai-helpdesk">Case Study →</a></div>
-          </div>
-          <figure class="project-screenshot"><a href="assets/ai-helpdesk-customer-portal.jpg" target="_blank" rel="noreferrer" aria-label="View full AI Helpdesk customer portal screenshot"><img src="assets/ai-helpdesk-customer-portal.jpg" width="650" height="850" alt="AI Helpdesk customer portal alongside a real Network triage result, explainable priority and troubleshooting matches, using fictional demo data" loading="lazy" decoding="async" /></a><figcaption>Customer portal + AI triage · Demo data</figcaption></figure>
-        </article>
-
-        <article class="project-card glass helpdesk-feature reveal" id="real-time-pipeline-project">
-          <div class="helpdesk-copy">
-            <div class="project-head"><span>02</span><em>DATA ENGINEERING / IOT / BACKEND</em></div>
-            <div class="project-title-row"><h3>Real-Time Data Engineering Pipeline</h3><span class="live-badge"><i aria-hidden="true"></i> LIVE PROJECT</span></div>
-            <p>Built a smart-building IoT data engineering pipeline that processes simulated streaming sensor events through validation, transformation, anomaly detection, dead-letter handling and operational analytics. The repository contains the full FastAPI, PostgreSQL and MQTT engineering implementation, while the public GitHub Pages demo runs client-side for instant recruiter access.</p>
-            <dl class="helpdesk-stats"><div><dt>Simulated devices</dt><dd>10</dd></div><div><dt>Anomaly methods</dt><dd>3</dd></div><div><dt>Docker services</dt><dd>5</dd></div><div><dt>Backend API tests</dt><dd>9</dd></div></dl>
-            <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>MQTT</span><span>Docker</span><span>scikit-learn</span><span>JavaScript</span></div>
-            <div class="project-actions"><a class="btn primary" href="https://billalhossainshishir.github.io/real-time-data-engineering-pipeline/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a class="btn outline" href="https://github.com/Billalhossainshishir/real-time-data-engineering-pipeline" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="btn outline" href="case-studies.html#real-time-pipeline">Case Study →</a></div>
-          </div>
-          <figure class="project-screenshot"><a href="assets/real-time-pipeline-dashboard.png" target="_blank" rel="noopener noreferrer" aria-label="View the full Real-Time Data Engineering Pipeline dashboard screenshot"><img src="assets/real-time-pipeline-dashboard.png" width="1600" height="1100" alt="Real-Time Data Engineering Pipeline live demo showing smart-building metrics, pipeline stages and streaming charts" loading="lazy" decoding="async" /></a><figcaption>Interactive browser demo · Simulated IoT data</figcaption></figure>
-        </article>
-
-        <article class="project-card glass reveal">
-          <div class="project-head"><span>03</span><em>INDUSTRY / AI</em></div>
-          <div class="project-symbol">R</div>
-          <h3>RAMIFY OS</h3>
-          <p>Project Manager for a browser-based AI product-trust demonstration that produces auditable decision receipts from structured evidence. I coordinate scope, requirements, team responsibilities, testing, documentation, demos and client feedback.</p>
-          <div class="tags"><span>AI Systems</span><span>Testing</span><span>Requirements</span><span>Project Delivery</span></div>
-          <a class="project-link" href="case-studies.html#ramify">Read the case study →</a>
-        </article>
-
-        <article class="project-card glass reveal delay-1">
-          <div class="project-head"><span>04</span><em>ML PROJECT</em></div>
-          <div class="project-symbol">★</div>
-          <h3>Star Classification</h3>
-          <p>Classified six star types using Decision Tree, Random Forest and SVC. Used stratified 5-fold cross-validation, leakage prevention and GridSearchCV before a final held-out evaluation.</p>
-          <div class="metric-bar"><b>99.47%</b><span>mean cross-validation accuracy · tuned Random Forest</span></div><div class="tags"><span>Python</span><span>scikit-learn</span><span>GridSearchCV</span><span>48 held-out samples correct</span></div>
-          <a class="project-link" href="https://github.com/Billalhossainshishir/star-classification-machine-learning" target="_blank" rel="noreferrer">View on GitHub ↗</a>
-        </article>
-
-        <article class="project-card glass reveal delay-1">
-          <div class="project-head"><span>05</span><em>CLOUD / DATA</em></div>
-          <div class="project-symbol">☁</div>
-          <h3>Cloud Data Processing</h3>
-          <p>Built and tested a transformation worker in a distributed Nectar Cloud workflow, encoding categorical variables and preparing numerical features for machine learning.</p>
-          <div class="metric-bar"><b>1,221</b><span>records processed in the prepared dataset</span></div>
-          <div class="tags"><span>Python</span><span>pandas</span><span>Nectar Cloud</span><span>Distributed Processing</span></div>
-          <a class="project-link" href="https://github.com/Billalhossainshishir/cloud-data-processing" target="_blank" rel="noreferrer">View on GitHub ↗</a>
-        </article>
-
-        <article class="project-card glass reveal">
-          <div class="project-head"><span>06</span><em>ALGORITHMS / C</em></div>
-          <div class="project-symbol">D</div>
-          <h3>Emergency Route Planning</h3>
-          <p>Implemented weighted graph route planning using Dijkstra shortest path and a binary-heap priority queue, including route reconstruction and invalid/unreachable cases.</p>
-          <div class="metric-bar"><b>24 / 24</b><span>unit tests passed</span></div>
-          <div class="tags"><span>C</span><span>Dijkstra</span><span>Graphs</span><span>Unit Testing</span></div>
-          <a class="project-link" href="https://github.com/Billalhossainshishir/emergency-route-planning" target="_blank" rel="noreferrer">View on GitHub ↗</a>
-        </article>
-
-        <article class="project-card glass reveal delay-1">
-          <div class="project-head"><span>07</span><em>MACHINE LEARNING</em></div>
-          <div class="project-symbol">ML</div>
-          <h3>Machine Learning Model Comparison</h3>
-          <p>Compared Logistic Regression and Decision Tree models for a fictional heat-safety problem, using preprocessing, accuracy, precision, recall, F1 and confusion matrices.</p>
-          <div class="tags"><span>Python</span><span>scikit-learn</span><span>Classification</span><span>Model Evaluation</span></div>
-          <a class="project-link" href="https://github.com/Billalhossainshishir/machine-learning-model-comparison" target="_blank" rel="noreferrer">View on GitHub ↗</a>
-        </article>
-
-        <article class="project-card glass reveal">
-          <div class="project-head"><span>08</span><em>DATA STRUCTURES</em></div>
-          <div class="project-symbol">DS</div>
-          <h3>Data Structures Performance</h3>
-          <p>Built a food-delivery data prototype with arrays, AVL trees, hash tables and linked lists, then benchmarked search performance as the dataset size increased.</p>
-          <div class="tags"><span>C</span><span>AVL Trees</span><span>Hash Tables</span><span>Benchmarking</span></div>
-          <a class="project-link" href="https://github.com/Billalhossainshishir/data-structures-performance" target="_blank" rel="noreferrer">View on GitHub ↗</a>
-        </article>
-      </div>
-    </section>
-
     <section class="section shell" id="skills">
       <div class="section-title reveal">
         <p>03 / SKILLS</p>
         <h2>The tools behind my work.</h2>
       </div>
-      <div class="skills-grid">
-        <article class="skill-card glass reveal"><span>01</span><h3>Programming & Frontend</h3><p>Python · C · JavaScript · HTML · CSS · Chart.js · API integration</p></article>
-        <article class="skill-card glass reveal"><span>02</span><h3>Backend & APIs</h3><p>FastAPI · REST APIs · SQLAlchemy · Pydantic · API validation</p></article>
-        <article class="skill-card glass reveal"><span>03</span><h3>Databases</h3><p>PostgreSQL · SQLite · SQL · relational data modelling</p></article>
-        <article class="skill-card glass reveal"><span>04</span><h3>AI & Information Retrieval</h3><p>scikit-learn · TF-IDF · Logistic Regression · text classification · cosine similarity · model evaluation</p></article>
-        <article class="skill-card glass reveal"><span>05</span><h3>Machine Learning & Data</h3><p>pandas · NumPy · classification · cross-validation · GridSearchCV · Jupyter</p></article>
-        <article class="skill-card glass reveal"><span>06</span><h3>Algorithms & Systems</h3><p>Arrays · linked lists · AVL trees · hash tables · weighted graphs · Dijkstra · binary heaps · UNIX shell</p></article>
-        <article class="skill-card glass reveal"><span>07</span><h3>Testing & Reliability</h3><p>pytest · FastAPI TestClient · automated testing · error handling · GitHub Actions</p></article>
-        <article class="skill-card glass reveal"><span>08</span><h3>Cloud & Deployment</h3><p>Render · Docker · Docker Compose · Uvicorn · environment configuration · Nectar Cloud · AWS fundamentals</p></article>
-        <article class="skill-card glass reveal"><span>09</span><h3>Project Delivery</h3><p>Git/GitHub · requirements analysis · documentation · stakeholder communication · presentations · coordination</p></article>
+      <div class="skills-grid evidence-skills">
+        <article class="skill-card glass reveal"><span>01 / AI & RETRIEVAL</span><h3>Explainable machine learning</h3><p>scikit-learn · TF-IDF · Logistic Regression · classification · similarity search · evaluation</p><a href="#ai-helpdesk-project">Evidence: AI Helpdesk Copilot →</a></article>
+        <article class="skill-card glass reveal"><span>02 / DATA ENGINEERING</span><h3>Streaming pipelines</h3><p>MQTT · validation · transformation · dead-letter handling · PostgreSQL · operational analytics</p><a href="#real-time-pipeline-project">Evidence: Real-Time Pipeline →</a></article>
+        <article class="skill-card glass reveal"><span>03 / BACKEND & DELIVERY</span><h3>Tested applications</h3><p>Python · FastAPI · Pydantic · SQLAlchemy · REST APIs · pytest · GitHub Actions</p><a href="#projects">Evidence: deployed projects →</a></article>
+        <article class="skill-card glass reveal"><span>04 / SYSTEMS & CLOUD</span><h3>Reliable implementation</h3><p>Docker · Render · Nectar Cloud · C · algorithms · data structures · requirements and testing</p><a href="#experience">Evidence: experience & delivery →</a></article>
       </div>
     </section>
 
@@ -337,6 +336,6 @@
     <span>Hobart, Tasmania · Built for GitHub Pages</span>
   </footer>
 
-  <script src="script.js?v=d3f4b3db98fb"></script>
+  <script src="script.js?v=portfolio-advanced"></script>
 </body>
 </html>

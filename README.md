@@ -2,7 +2,7 @@
 
 **Information Technology · Artificial Intelligence · Data · Software**
 
-I build practical machine-learning, data, cloud and software projects using **Python, C and modern development tools**. My work includes supervised learning, model evaluation, cloud data transformation, algorithms, UNIX systems and industry-facing software delivery.
+I build practical AI applications, real-time data pipelines, APIs and software projects using **Python, C and modern development tools**. My work connects implementation with validation, testing, deployment and clear engineering evidence.
 
 [Projects](#selected-projects) · [Technical Stack](#technical-stack) · [Experience](#industry--project-experience) · [LinkedIn](https://www.linkedin.com/in/billal-hossain-shishir-046a02358) · [Email](mailto:Billals@utas.edu.au)
 
@@ -18,6 +18,15 @@ Live AI-assisted IT service desk combining text classification, explainable prio
 **Evidence:** 25 automated tests · 490 synthetic training examples · 70 troubleshooting articles · 7 support categories. Synthetic evaluation scores demonstrate the pipeline, not production accuracy.
 
 [Live Demo](https://ai-helpdesk-copilot.onrender.com) · [Case Study](https://billalhossain.com.au/case-studies.html#ai-helpdesk)
+
+### [Real-Time Data Engineering Pipeline](https://github.com/Billalhossainshishir/real-time-data-engineering-pipeline) — Live Project
+**Python · FastAPI · PostgreSQL · MQTT · Docker · scikit-learn · JavaScript**
+
+Smart-building IoT pipeline with Pydantic validation, transformation and enrichment, dead-letter persistence, operational analytics, and rule-based, rolling statistical and Isolation Forest anomaly detection.
+
+**Evidence:** 10 simulated devices · 3 anomaly methods · 5 Docker services · automated backend and Docker integration tests.
+
+[Live Demo](https://billalhossainshishir.github.io/real-time-data-engineering-pipeline/) · [Case Study](https://billalhossain.com.au/case-studies.html#real-time-pipeline)
 
 ### ⭐ [Star Type Classification with Machine Learning](https://github.com/Billalhossainshishir/star-classification-machine-learning)
 **Python · scikit-learn · Random Forest · SVC · GridSearchCV**
@@ -59,13 +68,13 @@ Weighted-graph route planner using Dijkstra's shortest-path algorithm, a binary 
 `Python` `C` `JavaScript` `SQL` `HTML` `CSS`
 
 **Machine Learning & Data**  
-`pandas` `NumPy` `scikit-learn` `Classification` `Cross-Validation` `GridSearchCV` `Jupyter`
+`pandas` `NumPy` `scikit-learn` `Classification` `Cross-Validation` `GridSearchCV` `Isolation Forest` `Jupyter`
 
 **Algorithms & Systems**  
 `Data Structures` `Weighted Graphs` `Dijkstra` `Binary Heaps` `UNIX/Linux` `Shell Scripting`
 
 **Cloud & Development**  
-`Nectar Cloud` `Flask` `REST` `Git` `GitHub` `Unit Testing` `Requirements` `Documentation`
+`FastAPI` `PostgreSQL` `MQTT` `Docker` `Render` `Nectar Cloud` `REST` `GitHub Actions` `Testing`
 
 ---
 
