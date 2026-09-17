@@ -88,7 +88,7 @@ Attended industry sessions covering AI engineering, GraphRAG, Snowflake, synthet
 
 ## Education
 
-**Bachelor of Information Technology — Major in Artificial Intelligence**  
+**Bachelor of Information and Communication Technology (BICT) — Major in Artificial Intelligence**  
 University of Tasmania
 
 ---
